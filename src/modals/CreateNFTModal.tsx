@@ -51,7 +51,8 @@ export default function CreateNFTModal({ onCreate }: CreateNFTModalProps) {
     data.append("price", formData.price);
 
     try {
-      const response = await axios.post("http://localhost:5002/api/NFTs", data);
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5002";
+      const response = await axios.post(`${apiUrl}/api/NFTs`, data);
       console.log("NFT created successfully:", response.data);
       if (onCreate) {
         try {

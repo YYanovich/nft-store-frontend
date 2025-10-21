@@ -15,7 +15,9 @@ export default function NFTCard({
         className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-cyan-500/50 transition-shadow duration-300"
       >
         <img
-          src={`http://localhost:5002${nft.img}`}
+          src={`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5002"}${
+            nft.img
+          }`}
           alt={nft.description}
           className="w-full aspect-[4/3] object-cover rounded-xl"
         />
