@@ -21,8 +21,7 @@ export default function HomePage() {
 
   const fetchNFTs = async (query = "") => {
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5002";
-      const res = await axios.get(`${apiUrl}/api/NFTs`, {
+      const res = await axios.get("http://localhost:5002/api/NFTs", {
         params: { name: query },
       });
       console.log("Data from server:", res.data);
