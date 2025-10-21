@@ -2,9 +2,10 @@
 
 This is the frontend for the NFT Marketplace application, built with Next.js, React, and TypeScript. It provides a user-friendly interface to browse, search, and create NFTs.
 
-## Deployment on Vercel
+<img width="1728" height="1117" alt="image" src="https://github.com/user-attachments/assets/edad3a40-b1f0-473a-9131-c510b15ad527" />
 
-nft-store-frontend-kappa.vercel.app
+<img width="1728" height="1117" alt="image" src="https://github.com/user-attachments/assets/8591eec3-fd32-42dd-9cd5-048fa699aec4" />
+
 
 ## Tech Stack
 
@@ -46,7 +47,9 @@ The frontend needs to know the URL of the backend API. This is configured via an
     # .env.local.example
 
     # The base URL of your backend API
+    # For local development keep the local address
     NEXT_PUBLIC_API_URL=http://localhost:5002
+
     ```
 
     **Note**: The `NEXT_PUBLIC_` prefix is required by Next.js to expose the variable to the browser.
@@ -64,7 +67,5 @@ The application will start on `http://localhost:3000`.
 ## Features
 
 - **View NFTs**: Displays a grid of all available NFTs.
-- **Search**: Dynamically filters NFTs by name with a debounced search request to the backend.
 - **Create NFT**: A modal form allows users to upload an image and provide details to mint a new NFT.
 - **Responsive Design**: The layout adapts to different screen sizes.
-
