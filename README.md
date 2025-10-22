@@ -2,6 +2,13 @@
 
 This is the frontend for the NFT Marketplace application, built with Next.js, React, and TypeScript. It provides a user-friendly interface to browse, search, and create NFTs.
 
+
+
+Vercel deploy 
+https://nft-store-frontend-two.vercel.app/
+
+
+
 <img width="1728" height="1117" alt="image" src="https://github.com/user-attachments/assets/edad3a40-b1f0-473a-9131-c510b15ad527" />
 
 <img width="1728" height="1117" alt="image" src="https://github.com/user-attachments/assets/8591eec3-fd32-42dd-9cd5-048fa699aec4" />
