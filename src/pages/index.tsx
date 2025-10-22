@@ -13,6 +13,7 @@ export interface INFT {
 }
 
 export default function HomePage() {
+  const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "https://nft-store-backend-phi.vercel.app";
   const [nfts, setNfts] = useState<INFT[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function HomePage() {
 
   const fetchNFTs = async (query = "") => {
     try {
-      const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/NFTs`, {
+      const res = await axios.get(`${API_URL}/api/NFTs`, {
         params: { name: query },
       });
       console.log("Data from server:", res.data);
